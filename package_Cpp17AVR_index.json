@@ -10,7 +10,7 @@
             "platforms": [
                 {
                     "architecture": "avr",
-                    "archiveFileName": "Cpp17AVR-package-0.0.1.tar.gz",
+                    "archiveFileName": "Cpp17AVR-package-0.0.2.tar.gz",
                     "boards": [
                         {
                             "name": "Peters Micro"
@@ -95,12 +95,12 @@
                         }
                     ],
                     "category": "Contributed",
-                    "checksum": "SHA-256:2c684d9c8e89fd111487e8119f2436b4f26b6d266dfcfaf9f7a0c53812ce51a5",
+                    "checksum": "SHA-256:249a120fc8d6d236d5a758316fd013fa3b085aa4e70362ca4af8cd928904bf17",
                     "help": {
                         "online": "http://www.arduino.cc/en/Reference/HomePage"
                     },
                     "name": "Cpp17 Arduino AVR Boards",
-                    "size": "22309847",
+                    "size": "22311181",
                     "toolsDependencies": [
                         {
                             "name": "avr-gcc",
@@ -118,8 +118,8 @@
                             "version": "1.3.0"
                         }
                     ],
-                    "url": "file://localhost/Users/sop/Arduino/ArduinoCore-Cpp17/Cpp17AVR-package-0.0.1.tar.gz",
-                    "version": "0.0.1"
+                    "url": "file://localhost/Users/sop/Arduino/ArduinoCore-Cpp17/Cpp17AVR-package-0.0.2.tar.gz",
+                    "version": "0.0.2"
                 }
             ],
             "tools": [
