@@ -1,0 +1,733 @@
+{
+    "packages": [
+        {
+            "email": "peter.cpp@sommerlad.ch",
+            "help": {
+                "online": "http://www.arduino.cc/en/Reference/HomePage"
+            },
+            "maintainer": "Peter Sommerlad",
+            "name": "Cpp17ARM",
+            "platforms": [
+                {
+                    "architecture": "samd",
+                    "archiveFileName": "Cpp17ARM-package-0.0.1.tar.gz",
+                    "boards": [
+                        {
+                            "name": "Arduino MKR WiFi 1010"
+                        },
+                        {
+                            "name": "Arduino Zero"
+                        },
+                        {
+                            "name": "Arduino MKR1000"
+                        },
+                        {
+                            "name": "Arduino MKRZERO"
+                        },
+                        {
+                            "name": "Arduino MKR FOX 1200"
+                        },
+                        {
+                            "name": "Arduino MKR WAN 1300"
+                        },
+                        {
+                            "name": "Arduino MKR WAN 1310"
+                        },
+                        {
+                            "name": "Arduino MKR GSM 1400"
+                        },
+                        {
+                            "name": "Arduino MKR NB 1500"
+                        },
+                        {
+                            "name": "Arduino MKR Vidor 4000"
+                        },
+                        {
+                            "name": "Arduino Nano 33 IoT"
+                        },
+                        {
+                            "name": "Arduino M0 Pro"
+                        },
+                        {
+                            "name": "Arduino M0"
+                        },
+                        {
+                            "name": "Arduino Tian"
+                        },
+                        {
+                            "name": "Adafruit Circuit Playground Express"
+                        }
+                    ],
+                    "category": "Contributed",
+                    "checksum": "SHA-256:ba56a49221c0028a01b9140470d96fe3f3a2b963b4f44891b7411ca1c5377eea",
+                    "help": {
+                        "online": "http://www.arduino.cc/en/Reference/HomePage"
+                    },
+                    "name": "AAA Cpp17 Peter's SAMD Boards (32-bits ARM Cortex-M0+)",
+                    "size": "13148870",
+                    "toolsDependencies": [
+                        {
+                            "name": "arm-none-eabi-gcc",
+                            "packager": "xpack",
+                            "version": "9.2.1-xpack"
+                        },
+                        {
+                            "name": "bossac",
+                            "packager": "arduino",
+                            "version": "1.7.0-arduino3"
+                        },
+                        {
+                            "name": "openocd",
+                            "packager": "arduino",
+                            "version": "0.10.0-arduino7"
+                        },
+                        {
+                            "name": "CMSIS",
+                            "packager": "arduino",
+                            "version": "4.5.0"
+                        },
+                        {
+                            "name": "CMSIS-Atmel",
+                            "packager": "arduino",
+                            "version": "1.2.0"
+                        },
+                        {
+                            "name": "arduinoOTA",
+                            "packager": "arduino",
+                            "version": "1.2.1"
+                        }
+                    ],
+                    "url": "file://localhost/Users/sop/Arduino/ArduinoCore-Cpp17/Cpp17ARM-package-0.0.1.tar.gz",
+                    "version": "0.0.1"
+                }
+            ],
+            "tools": [
+                {
+                    "name": "arm-none-eabi-gcc",
+                    "systems": [
+                        {
+                            "archiveFileName": "gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2",
+                            "checksum": "SHA-256:34180943d95f759c66444a40b032f7dd9159a562670fc334f049567de140c51b",
+                            "host": "arm-linux-gnueabihf",
+                            "size": "96613739",
+                            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "gcc-arm-none-eabi-7-2018-q2-update-linuxarm64.tar.bz2",
+                            "checksum": "SHA-256:6fb5752fb4d11012bd0a1ceb93a19d0641ff7cf29d289b3e6b86b99768e66f76",
+                            "host": "aarch64-linux-gnu",
+                            "size": "99558726",
+                            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2018-q2-update-linuxarm64.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-win32-arduino1.zip",
+                            "checksum": "SHA-256:96dd0091856f4d2eb21046eba571321feecf7d50b9c156f708b2a8b683903382",
+                            "host": "i686-mingw32",
+                            "size": "131761924",
+                            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-win32-arduino1.zip"
+                        },
+                        {
+                            "archiveFileName": "xpack-arm-none-eabi-gcc-9.2.1-1.1-darwin-x64.tar.gz",
+                            "checksum": "SHA-256:6ff68117083624273c56244cf4242989a65069b376a9727ec4a230be824340f3",
+                            "host": "x86_64-apple-darwin",
+                            "size": "132371371",
+                            "url": "file://localhost/Users/sop/Arduino/ArduinoCore-Cpp17/xpack-arm-none-eabi-gcc-9.2.1-1.1-darwin-x64.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-linux64.tar.bz2",
+                            "checksum": "SHA-256:96a029e2ae130a1210eaa69e309ea40463028eab18ba19c1086e4c2dafe69a6a",
+                            "host": "x86_64-pc-linux-gnu",
+                            "size": "99857645",
+                            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-linux64.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2",
+                            "checksum": "SHA-256:090a0bc2b1956bc49392dff924a6c30fa57c88130097b1972204d67a45ce3cf3",
+                            "host": "i686-pc-linux-gnu",
+                            "size": "97427309",
+                            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2"
+                        }
+                    ],
+                    "version": "9.2.1-xpack"
+                },
+                {
+                    "name": "arm-none-eabi-gcc",
+                    "systems": [
+                        {
+                            "archiveFileName": "gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2",
+                            "checksum": "SHA-256:34180943d95f759c66444a40b032f7dd9159a562670fc334f049567de140c51b",
+                            "host": "arm-linux-gnueabihf",
+                            "size": "96613739",
+                            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "gcc-arm-none-eabi-7-2018-q2-update-linuxarm64.tar.bz2",
+                            "checksum": "SHA-256:6fb5752fb4d11012bd0a1ceb93a19d0641ff7cf29d289b3e6b86b99768e66f76",
+                            "host": "aarch64-linux-gnu",
+                            "size": "99558726",
+                            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2018-q2-update-linuxarm64.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-win32-arduino1.zip",
+                            "checksum": "SHA-256:96dd0091856f4d2eb21046eba571321feecf7d50b9c156f708b2a8b683903382",
+                            "host": "i686-mingw32",
+                            "size": "131761924",
+                            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-win32-arduino1.zip"
+                        },
+                        {
+                            "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2",
+                            "checksum": "SHA-256:89b776c7cf0591c810b5b60067e4dc113b5b71bc50084a536e71b894a97fdccb",
+                            "host": "x86_64-apple-darwin",
+                            "size": "104550003",
+                            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-mac.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "gcc-arm-none-eabi-7-2017-q4-major-linux64.tar.bz2",
+                            "checksum": "SHA-256:96a029e2ae130a1210eaa69e309ea40463028eab18ba19c1086e4c2dafe69a6a",
+                            "host": "x86_64-pc-linux-gnu",
+                            "size": "99857645",
+                            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2017-q4-major-linux64.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2",
+                            "checksum": "SHA-256:090a0bc2b1956bc49392dff924a6c30fa57c88130097b1972204d67a45ce3cf3",
+                            "host": "i686-pc-linux-gnu",
+                            "size": "97427309",
+                            "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2"
+                        }
+                    ],
+                    "version": "7-2017q4"
+                },
+                {
+                    "name": "arduinoOTA",
+                    "systems": [
+                        {
+                            "archiveFileName": "arduinoOTA-1.2.1-linux_386.tar.bz2",
+                            "checksum": "SHA-256:2ffdf64b78486c1d0bf28dc23d0ca36ab75ca92e84b9487246da01888abea6d4",
+                            "host": "i686-linux-gnu",
+                            "size": "2133779",
+                            "url": "http://downloads.arduino.cc/tools/arduinoOTA-1.2.1-linux_386.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "arduinoOTA-1.2.1-linux_amd64.tar.bz2",
+                            "checksum": "SHA-256:5b82310d53688480f34a916aac31cd8f2dd2be65dd8fa6c2445262262e1948f9",
+                            "host": "x86_64-linux-gnu",
+                            "size": "2257689",
+                            "url": "http://downloads.arduino.cc/tools/arduinoOTA-1.2.1-linux_amd64.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "arduinoOTA-1.2.1-linux_arm.tar.bz2",
+                            "checksum": "SHA-256:ad54b3dcd586212941fd992bab573b53d13207a419a3f2981c970a085ae0e9e0",
+                            "host": "arm-linux-gnueabihf",
+                            "size": "2093132",
+                            "url": "http://downloads.arduino.cc/tools/arduinoOTA-1.2.1-linux_arm.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "arduinoOTA-1.2.1-linux_arm.tar.bz2",
+                            "checksum": "SHA-256:ad54b3dcd586212941fd992bab573b53d13207a419a3f2981c970a085ae0e9e0",
+                            "host": "aarch64-linux-gnu",
+                            "size": "2093132",
+                            "url": "http://downloads.arduino.cc/tools/arduinoOTA-1.2.1-linux_arm.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "arduinoOTA-1.2.1-darwin_amd64.tar.bz2",
+                            "checksum": "SHA-256:93a6d9f9c0c765d237be1665bf7a0a8e2b0b6d2a8531eae92db807f5515088a7",
+                            "host": "i386-apple-darwin11",
+                            "size": "2244088",
+                            "url": "http://downloads.arduino.cc/tools/arduinoOTA-1.2.1-darwin_amd64.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "arduinoOTA-1.2.1-windows_386.zip",
+                            "checksum": "SHA-256:e1ebf21f2c073fce25c09548c656da90d4ef6c078401ec6f323e0c58335115e5",
+                            "host": "i686-mingw32",
+                            "size": "2237511",
+                            "url": "http://downloads.arduino.cc/tools/arduinoOTA-1.2.1-windows_386.zip"
+                        }
+                    ],
+                    "version": "1.2.1"
+                },
+                {
+                    "name": "arduinoOTA",
+                    "systems": [
+                        {
+                            "archiveFileName": "arduinoOTA-1.3.0-linux_386.tar.bz2",
+                            "checksum": "SHA-256:3e7f59d6fbc7a724598303f0d3289d0c4fd137a8973437980658379a024887b2",
+                            "host": "i686-linux-gnu",
+                            "size": "2633516",
+                            "url": "http://downloads.arduino.cc/tools/arduinoOTA-1.3.0-linux_386.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "arduinoOTA-1.3.0-linux_amd64.tar.bz2",
+                            "checksum": "SHA-256:aa45ee2441ffc3a122daec5802941d1fa2ac47adf5c5c481b5e0daa4dc259ffa",
+                            "host": "x86_64-linux-gnu",
+                            "size": "2716248",
+                            "url": "http://downloads.arduino.cc/tools/arduinoOTA-1.3.0-linux_amd64.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "arduinoOTA-1.3.0-linux_arm.tar.bz2",
+                            "checksum": "SHA-256:1888587409b56aef4ba0ab0e6703b3dccba7cc3a022756ba9b908247e5d5a656",
+                            "host": "arm-linux-gnueabihf",
+                            "size": "2567435",
+                            "url": "http://downloads.arduino.cc/tools/arduinoOTA-1.3.0-linux_arm.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "arduinoOTA-1.3.0-linux_arm64.tar.bz2",
+                            "checksum": "SHA-256:835ed8f37cffac37e979d1b0f6041559592d3d98be52f0e8611b76c4858e4113",
+                            "host": "aarch64-linux-gnu",
+                            "size": "2472427",
+                            "url": "http://downloads.arduino.cc/tools/arduinoOTA-1.3.0-linux_arm64.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "arduinoOTA-1.3.0-darwin_amd64.tar.bz2",
+                            "checksum": "SHA-256:d5d0f82ff829c0e434d12a2ee640a6fbd78f893ab37782edbb8b5bf2359d119e",
+                            "host": "i386-apple-darwin11",
+                            "size": "2766116",
+                            "url": "http://downloads.arduino.cc/tools/arduinoOTA-1.3.0-darwin_amd64.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "arduinoOTA-1.3.0-windows_386.zip",
+                            "checksum": "SHA-256:051943844eee442460d2c709edefadca184287fffd2b6c100dd53aa742aa05f6",
+                            "host": "i686-mingw32",
+                            "size": "2768948",
+                            "url": "http://downloads.arduino.cc/tools/arduinoOTA-1.3.0-windows_386.zip"
+                        }
+                    ],
+                    "version": "1.3.0"
+                },
+                {
+                    "name": "bossac",
+                    "systems": [
+                        {
+                            "archiveFileName": "bossac-1.7.0-mingw32.tar.gz",
+                            "checksum": "SHA-256:9ef7d11b4fabca0adc17102a0290957d5cc26ce46b422c3a5344722c80acc7b2",
+                            "host": "i686-mingw32",
+                            "size": "243066",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.7.0-mingw32.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.7.0-i386-apple-darwin15.6.0.tar.gz",
+                            "checksum": "SHA-256:feac36ab38876c163dcf51bdbcfbed01554eede3d41c59a0e152e170fe5164d2",
+                            "host": "x86_64-apple-darwin",
+                            "size": "63822",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.7.0-i386-apple-darwin15.6.0.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.7.0-x86_64-linux-gnu.tar.gz",
+                            "checksum": "SHA-256:9475c0c8596c1ba12dcbce60e48fef7559087fa8eccbea7bab732113f3c181ee",
+                            "host": "x86_64-pc-linux-gnu",
+                            "size": "31373",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.7.0-x86_64-linux-gnu.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.7.0-i686-linux-gnu.tar.gz",
+                            "checksum": "SHA-256:17003b0bdc698d52eeb91b09c34aec501c6e0285b4aa88659ab7cc407a451a4d",
+                            "host": "i686-pc-linux-gnu",
+                            "size": "31086",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.7.0-i686-linux-gnu.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.7.0-arm-linux-gnueabihf.tar.gz",
+                            "checksum": "SHA-256:09e46d0af61b2189caaac0bc6d4dd15cb22c167fdedc56ec98602dd5f10e68e0",
+                            "host": "arm-linux-gnueabihf",
+                            "size": "27382",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.7.0-arm-linux-gnueabihf.tar.gz"
+                        }
+                    ],
+                    "version": "1.7.0"
+                },
+                {
+                    "name": "bossac",
+                    "systems": [
+                        {
+                            "archiveFileName": "bossac-1.7.0-arduino3-windows.tar.gz",
+                            "checksum": "SHA-256:62745cc5a98c26949ec9041ef20420643c561ec43e99dae659debf44e6836526",
+                            "host": "i686-mingw32",
+                            "size": "3607421",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.7.0-arduino3-windows.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.7.0-arduino3-osx.tar.gz",
+                            "checksum": "SHA-256:adb3c14debd397d8135e9e970215c6972f0e592c7af7532fa15f9ce5e64b991f",
+                            "host": "x86_64-apple-darwin",
+                            "size": "75510",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.7.0-arduino3-osx.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.7.0-arduino3-linux64.tar.gz",
+                            "checksum": "SHA-256:1ae54999c1f97234a5c603eb99ad39313b11746a4ca517269a9285afa05f9100",
+                            "host": "x86_64-pc-linux-gnu",
+                            "size": "207271",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.7.0-arduino3-linux64.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.7.0-arduino3-linux32.tar.gz",
+                            "checksum": "SHA-256:4ac4354746d1a09258f49a43ef4d1baf030d81c022f8434774268b00f55d3ec3",
+                            "host": "i686-pc-linux-gnu",
+                            "size": "193577",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.7.0-arduino3-linux32.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.7.0-arduino3-linuxarm.tar.gz",
+                            "checksum": "SHA-256:626c6cc548046901143037b782bf019af1663bae0d78cf19181a876fb9abbb90",
+                            "host": "arm-linux-gnueabihf",
+                            "size": "193941",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.7.0-arduino3-linuxarm.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.7.0-arduino3-linuxaarch64.tar.gz",
+                            "checksum": "SHA-256:a098b2cc23e29f0dc468416210d097c4a808752cd5da1a7b9b8b7b931a04180b",
+                            "host": "aarch64-linux-gnu",
+                            "size": "268365",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.7.0-arduino3-linuxaarch64.tar.gz"
+                        }
+                    ],
+                    "version": "1.7.0-arduino3"
+                },
+                {
+                    "name": "bossac",
+                    "systems": [
+                        {
+                            "archiveFileName": "bossac-1.8-48-gb176eee-i686-w64-mingw32.tar.gz",
+                            "checksum": "SHA-256:4523a6897f3dfd673fe821c5cfbac8d6a12782e7a36b312b9ee7d41deec2a10a",
+                            "host": "i686-mingw32",
+                            "size": "91219",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.8-48-gb176eee-i686-w64-mingw32.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.8-48-gb176eee-i386-apple-darwin16.1.0.tar.gz",
+                            "checksum": "SHA-256:581ecc16021de36638ae14e9e064ffb4a1d532a11502f4252da8bcdf5ce1d649",
+                            "host": "x86_64-apple-darwin",
+                            "size": "39150",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.8-48-gb176eee-i386-apple-darwin16.1.0.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.8-48-gb176eee-x86_64-linux-gnu.tar.gz",
+                            "checksum": "SHA-256:1347eec67f5b90b785abdf6c8a8aa59129d0c016de7ff9b5ac1690378eacca3c",
+                            "host": "x86_64-pc-linux-gnu",
+                            "size": "37798",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.8-48-gb176eee-x86_64-linux-gnu.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.8-48-gb176eee-i486-linux-gnu.tar.gz",
+                            "checksum": "SHA-256:4c7492f876b8269aa9d8bcaad3aeda31acf1a0292383093b6d9f5f1d23fdafc3",
+                            "host": "i686-pc-linux-gnu",
+                            "size": "37374",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.8-48-gb176eee-i486-linux-gnu.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.8-48-gb176eee-arm-linux-gnueabihf.tar.gz",
+                            "checksum": "SHA-256:2001e4a592f3aefd22f213b1ddd6f5d8d5e74bd04080cf1b97c24cbaa81b10ed",
+                            "host": "arm-linux-gnueabihf",
+                            "size": "34825",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.8-48-gb176eee-arm-linux-gnueabihf.tar.gz"
+                        }
+                    ],
+                    "version": "1.8.0-48-gb176eee"
+                },
+                {
+                    "name": "bossac",
+                    "systems": [
+                        {
+                            "archiveFileName": "bossac-1.9.1-arduino1-windows.tar.gz",
+                            "checksum": "SHA-256:fe2d6ef78ca711c78e104e258357ed06b09e95e9356dc72d8d2c9f6670af4b7a",
+                            "host": "i686-mingw32",
+                            "size": "1260118",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.9.1-arduino1-windows.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.9.1-arduino1-osx.tar.gz",
+                            "checksum": "SHA-256:c356632f98d5bae9b4f5d3ad823a5ee89b23078c2b835e8ac39a208f4855b0e6",
+                            "host": "x86_64-apple-darwin",
+                            "size": "47835",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.9.1-arduino1-osx.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.9.1-arduino1-linux64.tar.gz",
+                            "checksum": "SHA-256:d3d324a3503a8db825c01f3b38519e4d4824c4d0e42cb399a16c1e074f9a9a86",
+                            "host": "x86_64-pc-linux-gnu",
+                            "size": "399453",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.9.1-arduino1-linux64.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.9.1-arduino1-linux32.tar.gz",
+                            "checksum": "SHA-256:eec622b8b5a8642af94ec23febfe14c928edd734f144db73b146bf6708d2057f",
+                            "host": "i686-pc-linux-gnu",
+                            "size": "384792",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.9.1-arduino1-linux32.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.9.1-arduino1-linuxarm.tar.gz",
+                            "checksum": "SHA-256:b42061d2fa2dbd6910d0d295e024f2cff7bb44f3e2ecc0bc2fe71a1f31b0ecba",
+                            "host": "arm-linux-gnueabihf",
+                            "size": "361799",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.9.1-arduino1-linuxarm.tar.gz"
+                        },
+                        {
+                            "archiveFileName": "bossac-1.9.1-arduino1-linuxaarch64.tar.gz",
+                            "checksum": "SHA-256:b271013841e1e25ee55f241e8c50a56ed775d3b322844e1e3099231ba17f3868",
+                            "host": "aarch64-linux-gnu",
+                            "size": "442657",
+                            "url": "http://downloads.arduino.cc/tools/bossac-1.9.1-arduino1-linuxaarch64.tar.gz"
+                        }
+                    ],
+                    "version": "1.9.1-arduino1"
+                },
+                {
+                    "name": "openocd",
+                    "systems": [
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino7-static-arm-linux-gnueabihf.tar.bz2",
+                            "checksum": "SHA-256:f8e0d783e80a3d5f75ee82e9542315871d46e1e283a97447735f1cbcd8986b06",
+                            "host": "arm-linux-gnueabihf",
+                            "size": "1638575",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino7-static-arm-linux-gnueabihf.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino7-static-aarch64-linux-gnu.tar.bz2",
+                            "checksum": "SHA-256:d47d728a9a8d98f28dc22e31d7127ced9de0d5e268292bf935e050ef1d2bdfd0",
+                            "host": "aarch64-linux-gnu",
+                            "size": "1580739",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino7-static-aarch64-linux-gnu.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino7-static-x86_64-apple-darwin13.tar.bz2",
+                            "checksum": "SHA-256:1e539a587a0c54a551ce0dc542af10a2520b1c93bbfe2ca4ebaef4c83411df1a",
+                            "host": "i386-apple-darwin11",
+                            "size": "1498970",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino7-static-x86_64-apple-darwin13.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino7-static-x86_64-ubuntu12.04-linux-gnu.tar.bz2",
+                            "checksum": "SHA-256:91d418bd309ec1e98795c622cd25c936aa537c0b3828fa5bcb191389378a1b27",
+                            "host": "x86_64-linux-gnu",
+                            "size": "1701581",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino7-static-x86_64-ubuntu12.04-linux-gnu.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino7-static-i686-ubuntu12.04-linux-gnu.tar.bz2",
+                            "checksum": "SHA-256:08a18f39d72a5626383503053a30a5da89eed7fdccb6f514b20b77403eb1b2b4",
+                            "host": "i686-linux-gnu",
+                            "size": "1626347",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino7-static-i686-ubuntu12.04-linux-gnu.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino7-static-i686-w64-mingw32.zip",
+                            "checksum": "SHA-256:f251aec5471296e18aa540c3078d66475357a76a77c16c06a2d9345f4e12b3d5",
+                            "host": "i686-mingw32",
+                            "size": "2016965",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino7-static-i686-w64-mingw32.zip"
+                        }
+                    ],
+                    "version": "0.10.0-arduino7"
+                },
+                {
+                    "name": "openocd",
+                    "systems": [
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino8-static-arm-linux-gnueabihf.tar.bz2",
+                            "checksum": "SHA-256:86c4ea3086b4a1475fd8a1e1daf4585748be093dad4160e816b1bf2502501fb2",
+                            "host": "arm-linux-gnueabihf",
+                            "size": "1714346",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino8-static-arm-linux-gnueabihf.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino8-static-aarch64-linux-gnu.tar.bz2",
+                            "checksum": "SHA-256:500cb112ee92092bbfce69649b90d0284752c5766f5aaf5c24dc754100788ef9",
+                            "host": "aarch64-linux-gnu",
+                            "size": "1778371",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino8-static-aarch64-linux-gnu.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino8-static-x86_64-apple-darwin13.tar.bz2",
+                            "checksum": "SHA-256:584b513ebbc4a645a68234d964ba56f042aaf7668d84ba47398a07a294516cc4",
+                            "host": "i386-apple-darwin11",
+                            "size": "1653652",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino8-static-x86_64-apple-darwin13.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino8-static-x86_64-ubuntu12.04-linux-gnu.tar.bz2",
+                            "checksum": "SHA-256:455d4123146bf6b4b095de86d3340fd01e39bba9c70b2f0bb8e979ac4dddac39",
+                            "host": "x86_64-linux-gnu",
+                            "size": "1845547",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino8-static-x86_64-ubuntu12.04-linux-gnu.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino8-static-i686-ubuntu12.04-linux-gnu.tar.bz2",
+                            "checksum": "SHA-256:5b44889984daefa966b8251edb98445169107ca32f974ca598d4c59e7d2c8901",
+                            "host": "i686-linux-gnu",
+                            "size": "1781892",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino8-static-i686-ubuntu12.04-linux-gnu.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino8-static-i686-w64-mingw32.zip",
+                            "checksum": "SHA-256:35a92f32f2762ef9405d2c684ec7bea2e70c01068f380251aecd9290f5bd5b24",
+                            "host": "i686-mingw32",
+                            "size": "2190397",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino8-static-i686-w64-mingw32.zip"
+                        }
+                    ],
+                    "version": "0.10.0-arduino8"
+                },
+                {
+                    "name": "openocd",
+                    "systems": [
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino9-static-aarch64-linux-gnu.tar.bz2",
+                            "checksum": "SHA-256:b814b16b52cef21eacf456cc7a89d7b5d4cb1385bfb8fb82963b7d8151824d93",
+                            "host": "aarch64-linux-gnu",
+                            "size": "1714657",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-aarch64-linux-gnu.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino9-static-arm-linux-gnueabihf.tar.bz2",
+                            "checksum": "SHA-256:f0443e771f5e3a779949498d3c9bfffd1dd27cdf0ad7136a2db5e80447a7175a",
+                            "host": "arm-linux-gnueabihf",
+                            "size": "1778177",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-arm-linux-gnueabihf.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino9-static-i686-ubuntu12.04-linux-gnu.tar.bz2",
+                            "checksum": "SHA-256:a22872918df899cb808f9286141d42438ae5611156c143cfb692069f52a2bddd",
+                            "host": "i686-linux-gnu",
+                            "size": "1782958",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-i686-ubuntu12.04-linux-gnu.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino9-static-i686-w64-mingw32.zip",
+                            "checksum": "SHA-256:f53f9a2b7f48a2ebc00ea9196bf559d15987d3779bcea4118ebec8925da5a1f6",
+                            "host": "i686-mingw32",
+                            "size": "2190484",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-i686-w64-mingw32.zip"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino9-static-x86_64-apple-darwin13.tar.bz2",
+                            "checksum": "SHA-256:6d47f97919f317bb6e5f1f903127604271d66d149f4625f29b8e0eb5f6c94c64",
+                            "host": "i386-apple-darwin11",
+                            "size": "1655311",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-x86_64-apple-darwin13.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "openocd-0.10.0-arduino9-static-x86_64-ubuntu12.04-linux-gnu.tar.bz2",
+                            "checksum": "SHA-256:f624552b5ba56aa78d0c1a0e5d18cf2b5694db2ed44080968e22aa1af8f23c1b",
+                            "host": "x86_64-linux-gnu",
+                            "size": "1844365",
+                            "url": "http://downloads.arduino.cc/tools/openocd-0.10.0-arduino9-static-x86_64-ubuntu12.04-linux-gnu.tar.bz2"
+                        }
+                    ],
+                    "version": "0.10.0-arduino9"
+                },
+                {
+                    "name": "CMSIS",
+                    "systems": [
+                        {
+                            "archiveFileName": "CMSIS-4.5.0.tar.bz2",
+                            "checksum": "SHA-256:cd8f7eae9fc7c8b4a1b5e40b89b9666d33953b47d3d2eb81844f5af729fa224d",
+                            "host": "i686-mingw32",
+                            "size": "31525196",
+                            "url": "http://downloads.arduino.cc/CMSIS-4.5.0.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "CMSIS-4.5.0.tar.bz2",
+                            "checksum": "SHA-256:cd8f7eae9fc7c8b4a1b5e40b89b9666d33953b47d3d2eb81844f5af729fa224d",
+                            "host": "x86_64-apple-darwin",
+                            "size": "31525196",
+                            "url": "http://downloads.arduino.cc/CMSIS-4.5.0.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "CMSIS-4.5.0.tar.bz2",
+                            "checksum": "SHA-256:cd8f7eae9fc7c8b4a1b5e40b89b9666d33953b47d3d2eb81844f5af729fa224d",
+                            "host": "x86_64-pc-linux-gnu",
+                            "size": "31525196",
+                            "url": "http://downloads.arduino.cc/CMSIS-4.5.0.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "CMSIS-4.5.0.tar.bz2",
+                            "checksum": "SHA-256:cd8f7eae9fc7c8b4a1b5e40b89b9666d33953b47d3d2eb81844f5af729fa224d",
+                            "host": "i686-pc-linux-gnu",
+                            "size": "31525196",
+                            "url": "http://downloads.arduino.cc/CMSIS-4.5.0.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "CMSIS-4.5.0.tar.bz2",
+                            "checksum": "SHA-256:cd8f7eae9fc7c8b4a1b5e40b89b9666d33953b47d3d2eb81844f5af729fa224d",
+                            "host": "arm-linux-gnueabihf",
+                            "size": "31525196",
+                            "url": "http://downloads.arduino.cc/CMSIS-4.5.0.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "CMSIS-4.5.0.tar.bz2",
+                            "checksum": "SHA-256:cd8f7eae9fc7c8b4a1b5e40b89b9666d33953b47d3d2eb81844f5af729fa224d",
+                            "host": "aarch64-linux-gnu",
+                            "size": "31525196",
+                            "url": "http://downloads.arduino.cc/CMSIS-4.5.0.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "CMSIS-4.5.0.tar.bz2",
+                            "checksum": "SHA-256:cd8f7eae9fc7c8b4a1b5e40b89b9666d33953b47d3d2eb81844f5af729fa224d",
+                            "host": "all",
+                            "size": "31525196",
+                            "url": "http://downloads.arduino.cc/CMSIS-4.5.0.tar.bz2"
+                        }
+                    ],
+                    "version": "4.5.0"
+                },
+                {
+                    "name": "CMSIS-Atmel",
+                    "systems": [
+                        {
+                            "archiveFileName": "CMSIS-Atmel-1.2.0.tar.bz2",
+                            "checksum": "SHA-256:5e02670be7e36be9691d059bee0b04ee8b249404687531f33893922d116b19a5",
+                            "host": "i686-mingw32",
+                            "size": "2221805",
+                            "url": "http://downloads.arduino.cc/CMSIS-Atmel-1.2.0.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "CMSIS-Atmel-1.2.0.tar.bz2",
+                            "checksum": "SHA-256:5e02670be7e36be9691d059bee0b04ee8b249404687531f33893922d116b19a5",
+                            "host": "x86_64-apple-darwin",
+                            "size": "2221805",
+                            "url": "http://downloads.arduino.cc/CMSIS-Atmel-1.2.0.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "CMSIS-Atmel-1.2.0.tar.bz2",
+                            "checksum": "SHA-256:5e02670be7e36be9691d059bee0b04ee8b249404687531f33893922d116b19a5",
+                            "host": "x86_64-pc-linux-gnu",
+                            "size": "2221805",
+                            "url": "https://downloads.arduino.cc/CMSIS-Atmel-1.2.0.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "CMSIS-Atmel-1.2.0.tar.bz2",
+                            "checksum": "SHA-256:5e02670be7e36be9691d059bee0b04ee8b249404687531f33893922d116b19a5",
+                            "host": "i686-pc-linux-gnu",
+                            "size": "2221805",
+                            "url": "https://downloads.arduino.cc/CMSIS-Atmel-1.2.0.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "CMSIS-Atmel-1.2.0.tar.bz2",
+                            "checksum": "SHA-256:5e02670be7e36be9691d059bee0b04ee8b249404687531f33893922d116b19a5",
+                            "host": "arm-linux-gnueabihf",
+                            "size": "2221805",
+                            "url": "https://downloads.arduino.cc/CMSIS-Atmel-1.2.0.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "CMSIS-Atmel-1.2.0.tar.bz2",
+                            "checksum": "SHA-256:5e02670be7e36be9691d059bee0b04ee8b249404687531f33893922d116b19a5",
+                            "host": "aarch64-linux-gnu",
+                            "size": "2221805",
+                            "url": "https://downloads.arduino.cc/CMSIS-Atmel-1.2.0.tar.bz2"
+                        },
+                        {
+                            "archiveFileName": "CMSIS-Atmel-1.2.0.tar.bz2",
+                            "checksum": "SHA-256:5e02670be7e36be9691d059bee0b04ee8b249404687531f33893922d116b19a5",
+                            "host": "all",
+                            "size": "2221805",
+                            "url": "https://downloads.arduino.cc/CMSIS-Atmel-1.2.0.tar.bz2"
+                        }
+                    ],
+                    "version": "1.2.0"
+                }
+            ],
+            "websiteURL": "http://www.arduino.cc/"
+        }
+    ]
+}
