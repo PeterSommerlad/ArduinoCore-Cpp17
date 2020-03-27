@@ -142,9 +142,9 @@
                         },
                         {
                             "archiveFileName": "avr-gcc-9.3.0.mojave.tar.gz",
-                            "checksum": "SHA-256:be23bc1ac0e91295338ec1689fcd3df62d3e1ab9930aa8224faf9fd413af37c8",
+                            "checksum": "SHA-256:27f84725b5f6582f170648eda1b28036b6035d817d533193dd113b154e9d0fd8",
                             "host": "x86_64-apple-darwin14",
-                            "size": "316130147",
+                            "size": "315890349",
                             "url": "file://localhost//Users/sop/Arduino/ArduinoCore-Cpp17/avr-gcc-9.3.0.mojave.tar.gz"
                         },
                         {
