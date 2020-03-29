@@ -95,12 +95,12 @@
                         }
                     ],
                     "category": "Contributed",
-                    "checksum": "SHA-256:00a3894d86e261a4c4710a7be361255d7476dcaec21af27aebb7f6e3b32898ed",
+                    "checksum": "SHA-256:e06cca8c863c427a3d5d1620ce61d17fe920d4daabc3f5bb2f0ef0046125e205",
                     "help": {
                         "online": "http://www.arduino.cc/en/Reference/HomePage"
                     },
                     "name": "Cpp17 Arduino AVR Boards",
-                    "size": "22322934",
+                    "size": "22324811",
                     "toolsDependencies": [
                         {
                             "name": "avr-gcc",
@@ -142,9 +142,9 @@
                         },
                         {
                             "archiveFileName": "avr-gcc-9.3.0.mojave.tar.gz",
-                            "checksum": "SHA-256:27f84725b5f6582f170648eda1b28036b6035d817d533193dd113b154e9d0fd8",
+                            "checksum": "SHA-256:329e63d178bdb74790758d912fd6b0e56c861ef84620db1c42f0fcce771fbc6c",
                             "host": "x86_64-apple-darwin14",
-                            "size": "315890349",
+                            "size": "65862782",
                             "url": "file://localhost//Users/sop/Arduino/ArduinoCore-Cpp17/avr-gcc-9.3.0.mojave.tar.gz"
                         },
                         {

@@ -1,0 +1,7 @@
+<testsuites>
+	<testsuite name="AllTests" tests="3">
+		<testcase classname="AllTests" name="testThatdigitalPinToPortProducesIdenticalResultsThatAreInTheMap"/>
+		<testcase classname="AllTests" name="testThatdigitalPinToBitmaskProducesIdenticalResultsThatAreInTheMap"/>
+		<testcase classname="AllTests" name="testThatdigitalPinToTimerProducesIdenticalResultsThatAreInTheMap"/>
+	</testsuite>
+</testsuites>

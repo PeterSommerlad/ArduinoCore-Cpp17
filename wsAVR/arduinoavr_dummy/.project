@@ -46,6 +46,11 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>standard</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>cores/arduino</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -84,6 +89,11 @@
 			<name>microp/pins_arduino.h</name>
 			<type>1</type>
 			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/microp/pins_arduino.h</locationURI>
+		</link>
+		<link>
+			<name>standard/pins_arduino.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/standard/pins_arduino.h</locationURI>
 		</link>
 		<link>
 			<name>cores/arduino/Arduino.h</name>
