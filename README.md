@@ -2,12 +2,18 @@
 
 Infrastructure to port ArduinoCore to C++17 (no C) - an attempt
 
+For example, instead of PROGMEM tables, use constexpr inline functions, which saves space and does not require special inline assembly on AVR.
+
+Could use more type safety, but let's cross the bridge when we come to it.
+
 ### Achievement Log
 
 * AVR Core package with self-built gcc 9.3.0, binutils 2.34 and avr-libc trunk (Macos Mojave only)
 * ARM Core package with more recent compiler binary gcc9.2.1 from xpack project
 * Own ARM Core package clone `package_Cpp17ARM_index.json`
 * Own AVR Core package clone `package_Cpp17AVR_index.json`
+* all .c files for all cores compiled as C++ 
+* `pins_arduino.h` and Arduino.h for Uno and Micro (AVR) C++-ified. (Boards microp and unop have the compiler settings) Flash-program-space savings 7-20% from simple test cases
 
 ### Caveats
 
