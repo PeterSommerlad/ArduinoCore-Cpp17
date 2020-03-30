@@ -1,8 +1,11 @@
 <testsuites>
-	<testsuite name="AllTests" tests="4">
+	<testsuite name="AllTests" tests="7">
 		<testcase classname="AllTests" name="micro::testThatdigitalPinToPortProducesIdenticalResultsThatAreInTheMap"/>
 		<testcase classname="AllTests" name="micro::testThatdigitalPinToBitmaskProducesIdenticalResultsThatAreInTheMap"/>
 		<testcase classname="AllTests" name="micro::testThatdigitalPinToTimerProducesIdenticalResultsThatAreInTheMap"/>
 		<testcase classname="AllTests" name="uno::unotestThatdigitalPinToTimerProducesIdenticalResultsThatAreInTheMap"/>
+		<testcase classname="AllTests" name="mega::testThatdigitalPinToPortProducesIdenticalResultsThatAreInTheMap"/>
+		<testcase classname="AllTests" name="mega::testThatdigitalPinToBitmaskProducesIdenticalResultsThatAreInTheMap"/>
+		<testcase classname="AllTests" name="mega::testThatdigitalPinToTimerProducesIdenticalResultsThatAreInTheMap"/>
 	</testsuite>
 </testsuites>

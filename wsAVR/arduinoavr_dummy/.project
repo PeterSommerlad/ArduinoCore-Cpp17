@@ -26,7 +26,27 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>circuitplay32u4</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>cores</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>eightanaloginputs</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>ethernet</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>gemma</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
@@ -41,7 +61,27 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>mega</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>micro</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>microp</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>robot_control</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>robot_motor</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
@@ -51,9 +91,34 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>yun</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>circuitplay32u4/pins_arduino.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/circuitplay32u4/pins_arduino.h</locationURI>
+		</link>
+		<link>
 			<name>cores/arduino</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>eightanaloginputs/pins_arduino.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/eightanaloginputs/pins_arduino.h</locationURI>
+		</link>
+		<link>
+			<name>ethernet/pins_arduino.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/ethernet/pins_arduino.h</locationURI>
+		</link>
+		<link>
+			<name>gemma/pins_arduino.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/gemma/pins_arduino.h</locationURI>
 		</link>
 		<link>
 			<name>leonardo/pins_arduino.h</name>
@@ -86,14 +151,39 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>mega/pins_arduino.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/mega/pins_arduino.h</locationURI>
+		</link>
+		<link>
+			<name>micro/pins_arduino.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/micro/pins_arduino.h</locationURI>
+		</link>
+		<link>
 			<name>microp/pins_arduino.h</name>
 			<type>1</type>
 			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/microp/pins_arduino.h</locationURI>
 		</link>
 		<link>
+			<name>robot_control/pins_arduino.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/robot_control/pins_arduino.h</locationURI>
+		</link>
+		<link>
+			<name>robot_motor/pins_arduino.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/robot_motor/pins_arduino.h</locationURI>
+		</link>
+		<link>
 			<name>standard/pins_arduino.h</name>
 			<type>1</type>
 			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/standard/pins_arduino.h</locationURI>
+		</link>
+		<link>
+			<name>yun/pins_arduino.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/yun/pins_arduino.h</locationURI>
 		</link>
 		<link>
 			<name>cores/arduino/Arduino.h</name>
