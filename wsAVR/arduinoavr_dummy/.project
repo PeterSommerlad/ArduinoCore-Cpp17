@@ -26,27 +26,12 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>circuitplay32u4</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
 			<name>cores</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
 			<name>eightanaloginputs</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>ethernet</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>gemma</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
@@ -96,11 +81,6 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>circuitplay32u4/pins_arduino.h</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/circuitplay32u4/pins_arduino.h</locationURI>
-		</link>
-		<link>
 			<name>cores/arduino</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -109,16 +89,6 @@
 			<name>eightanaloginputs/pins_arduino.h</name>
 			<type>1</type>
 			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/eightanaloginputs/pins_arduino.h</locationURI>
-		</link>
-		<link>
-			<name>ethernet/pins_arduino.h</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/ethernet/pins_arduino.h</locationURI>
-		</link>
-		<link>
-			<name>gemma/pins_arduino.h</name>
-			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/variants/gemma/pins_arduino.h</locationURI>
 		</link>
 		<link>
 			<name>leonardo/pins_arduino.h</name>

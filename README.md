@@ -8,6 +8,8 @@ Could use more type safety, but let's cross the bridge when we come to it.
 
 Could only test with the Arduino AVR boards that I own (Uno, Micro, MegaADK), Help wanted.
 
+The source code for the AVR cores is at https://github.com/PeterSommerlad/ArduinoCore-avr/tree/Cpp17
+
 ### Achievement Log
 
 * AVR Core package with self-built gcc 9.3.0, binutils 2.34 and avr-libc trunk (Macos Mojave only)
@@ -19,7 +21,11 @@ Could only test with the Arduino AVR boards that I own (Uno, Micro, MegaADK), He
 * `pins_arduino.h` MegaADK (AVR) C++-ified. (Board MegaADKp has the compiler settings), reported the pins_arduino.h to leonardo for all boards, but can not test that due to lack of hardware. microp uses the micro variant again.
 * RAII class for inhibiting interrupts SafeStatusRegisterAndClearInterrupt in Arduino.h and used in wiring code.
 * some improved type safety through enum class for PortType and PinType.
-
+* remove non-converted obsolete variants and boards (unless being already converted): 
+  * Adafruit Circuiplay (circuitplay32u4 - is almost 1-1 leonardo clone)
+  * Arduino Ethernet (ethernet - retired product)
+  * Arduino Gemma (gemma - retired product)
+  * Arduino Robot (robot\_control, robot\_motor - retired product)
 
 ### Caveats
 
@@ -33,3 +39,9 @@ Could only test with the Arduino AVR boards that I own (Uno, Micro, MegaADK), He
 * Thanks to https://www.hackster.io/andrewm1100 for the python script
 * Thanks to https://www.avrfreaks.net/forum/building-gcc83-avr-libc-linux-w-atpack-hooks for building avr-gcc
 * Thanks to https://xpack.github.io/arm-none-eabi-gcc/ for arm-none-eabi-gcc
+
+
+### Notes and Todos
+
+* USBApi.h defines u8 u16 and u32 -> refactor to use inttypes.h official names, also used in CDC.cpp
+* eliminate more macros and redundancy

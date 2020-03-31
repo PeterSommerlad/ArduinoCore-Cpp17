@@ -95,12 +95,12 @@
                         }
                     ],
                     "category": "Contributed",
-                    "checksum": "SHA-256:a42ac39554935a414c979a67fb3763b36afaa29665003857ef087ed9afd18910",
+                    "checksum": "SHA-256:4ec1a3995f531c90f9b442df94d1c5fefe653a47d4035f0d303527702f24b647",
                     "help": {
                         "online": "http://www.arduino.cc/en/Reference/HomePage"
                     },
                     "name": "Cpp17 Arduino AVR Boards",
-                    "size": "22330562",
+                    "size": "22401056",
                     "toolsDependencies": [
                         {
                             "name": "avr-gcc",
