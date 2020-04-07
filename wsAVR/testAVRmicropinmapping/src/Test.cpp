@@ -1106,6 +1106,149 @@ void testThatdigitalPinToTimerProducesIdenticalResultsThatAreInTheMap() {
 }
 
 }
+constexpr auto F_CPU{16000000L};
+
+
+uint8_t compute_ocr_and_prescalerbits_for_8bit_timer_ori(uint32_t &ocr, unsigned int frequency, uint8_t prescalerbits, int8_t _timer) {
+	ocr = F_CPU / frequency / 2 - 1;
+	int prescaler=1; // for testing
+	prescalerbits = 0b001; // ck/1: same for both timers
+	if (ocr > 255) {
+		prescaler=8;
+		ocr = F_CPU / frequency / 2 / prescaler - 1;
+		prescalerbits = 0b010; // ck/8: same for both timers
+		if (_timer == 2 && ocr > 255) {
+			prescaler=32;
+			ocr = F_CPU / frequency / 2 / prescaler - 1;
+			prescalerbits = 0b011;
+		}
+		if (ocr > 255) {
+			prescaler=64;
+			ocr = F_CPU / frequency / 2 / prescaler - 1;
+			prescalerbits = _timer == 0 ? 0b011 : 0b100;
+			if (_timer == 2 && ocr > 255) {
+				prescaler=128;
+				ocr = F_CPU / frequency / 2 / prescaler - 1;
+				prescalerbits = 0b101;
+			}
+			if (ocr > 255) {
+				prescaler=256;
+				ocr = F_CPU / frequency / 2 / prescaler - 1;
+				prescalerbits = _timer == 0 ? 0b100 : 0b110;
+				if (ocr > 255) {
+					prescaler=1024;
+					// can't do any better than /1024
+					ocr = F_CPU / frequency / 2 / prescaler - 1;
+					prescalerbits = _timer == 0 ? 0b101 : 0b111;
+				}
+			}
+		}
+	}
+	return prescalerbits;
+}
+
+uint8_t compute_ocr_and_prescalerbits_for_8bit_timer2(uint32_t &ocr, unsigned int frequency, uint8_t prescalerbits) {
+	unsigned long baseticks = F_CPU/(2L*frequency);
+	prescalerbits=1;
+	while(baseticks>256 && prescalerbits < 7){
+		uint8_t const shift = [&](){
+			if (prescalerbits==1) return 3;
+			if (prescalerbits>2 && prescalerbits<=5) return 1;
+			return 2;
+		}();
+		baseticks >>= shift; // timer2 = 8(3),32(2),64(1),128(1),256(1),1024(2)
+		prescalerbits++;
+	}
+	ocr=baseticks-1;
+	return prescalerbits;
+}
+
+void simpleTestforFrequencyFormulaFor8bit(){
+	uint32_t ocr;
+	auto bits = compute_ocr_and_prescalerbits_for_8bit_timer_ori(ocr, 440, 0, 2);
+	ASSERT_EQUAL(5,int(bits)); //128
+	ASSERT_EQUAL(141L,ocr);
+	bits = compute_ocr_and_prescalerbits_for_8bit_timer_ori(ocr, 880, 0, 2);
+	ASSERT_EQUAL(4,int(bits)); //64
+	ASSERT_EQUAL(141L,ocr);
+}
+
+void simpleTestforFrequencyFormulaFor8bit1(){
+
+	uint32_t ocr;
+	auto bits = compute_ocr_and_prescalerbits_for_8bit_timer2(ocr, 440, 0);
+	ASSERT_EQUAL(5,int(bits)); //128
+	ASSERT_EQUAL(141L,ocr);
+	bits = compute_ocr_and_prescalerbits_for_8bit_timer2(ocr, 880, 0);
+	ASSERT_EQUAL(4,int(bits)); //256
+	ASSERT_EQUAL(141L,ocr);
+}
+
+void testFrequencyRangeForTimer2(){
+	int freq = 40; // scale exponentially
+	while (freq < 50000){
+		uint32_t ocr_ori;
+		uint32_t ocr_new;
+		auto bits_ori = compute_ocr_and_prescalerbits_for_8bit_timer_ori(ocr_ori,freq,0,2);
+		auto bits_new =compute_ocr_and_prescalerbits_for_8bit_timer2(ocr_new,freq,0);
+		std::string msg=std::to_string(freq);
+		ASSERT_EQUALM(msg,bits_ori,bits_new);
+		ASSERT_EQUALM(msg,ocr_ori,ocr_new);
+		freq *= 2; // double the frequency
+	}
+}
+
+// Tone only uses timer 2 or 3...
+//void testFrequencyRangeForTimer0(){
+//	int freq = 40; // scale exponentially
+//	while (freq < 50000){
+//		uint32_t ocr_ori;
+//		uint32_t ocr_new;
+//		auto bits_ori = compute_ocr_and_prescalerbits_for_8bit_timer_ori(ocr_ori,freq,0,0);
+//		auto bits_new =compute_ocr_and_prescalerbits_for_8bit_timer2(ocr_new,freq,0,0);
+//		std::string msg=std::to_string(freq);
+//		ASSERT_EQUALM(msg,bits_ori,bits_new);
+//		ASSERT_EQUALM(msg,ocr_ori,ocr_new);
+//		freq *= 2; // double the frequency
+//	}
+//}
+
+uint8_t compute_ocr_and_prescalerbits_for_16bit_timer_ori(uint32_t &ocr, unsigned int frequency, uint8_t prescalerbits) {
+	// two choices for the 16 bit timers: ck/1 or ck/64
+	ocr = F_CPU / frequency / 2 - 1;
+	prescalerbits = 0b001;
+	if (ocr > 0xffff) { // cannot hear that anyway
+		ocr = F_CPU / frequency / 2 / 64 - 1;
+		prescalerbits = 0b011;
+	}
+	return prescalerbits;
+}
+
+
+uint8_t compute_ocr_and_prescalerbits_for_16bit_timer(uint32_t &ocr, unsigned int frequency, uint8_t prescalerbits) {
+	// two choices for the 16 bit timers: ck/1 or ck/64
+	ocr = F_CPU / frequency / 2;
+	prescalerbits = 0b001;
+	if (ocr > 0x10000L ) {
+		ocr /= 64 ;
+		prescalerbits = 0b011;
+	}
+	ocr -= 1; // adjust accordingly
+	return prescalerbits;
+}
+void testFrequencyRangeForTimer3(){
+	int freq = 40; // scale exponentially
+	while (freq < 50000){
+		uint32_t ocr_ori;
+		uint32_t ocr_new;
+		auto bits_ori = compute_ocr_and_prescalerbits_for_16bit_timer_ori(ocr_ori,freq,0);
+		auto bits_new =compute_ocr_and_prescalerbits_for_16bit_timer(ocr_new,freq,0);
+		std::string msg=std::to_string(freq);
+		ASSERT_EQUALM(msg,bits_ori,bits_new);
+		ASSERT_EQUALM(msg,ocr_ori,ocr_new);
+		freq *= 2; // double the frequency
+	}
+}
 
 
 bool runAllTests(int argc, char const *argv[]) {
@@ -1123,6 +1266,10 @@ bool runAllTests(int argc, char const *argv[]) {
 	s.push_back(CUTE(mega::testThatComputedPortIsSameAsSwitchImplementation));
 	s.push_back(CUTE(mega::testThatComputedPinIsSameAsSwitchImplementation));
 	s.push_back(CUTE(standardMega8::testThatdigitalPinToTimerProducesIdenticalResultsThatAreInTheMap));
+	s.push_back(CUTE(simpleTestforFrequencyFormulaFor8bit));
+	s.push_back(CUTE(simpleTestforFrequencyFormulaFor8bit1));
+	s.push_back(CUTE(testFrequencyRangeForTimer2));
+	s.push_back(CUTE(testFrequencyRangeForTimer3));
 	cute::xml_file_opener xmlfile(argc, argv);
 	cute::xml_listener<cute::ide_listener<>> lis(xmlfile.out);
 	auto runner = cute::makeRunner(lis, argc, argv);

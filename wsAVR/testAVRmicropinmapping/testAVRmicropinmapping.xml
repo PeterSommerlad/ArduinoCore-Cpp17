@@ -1,5 +1,5 @@
 <testsuites>
-	<testsuite name="AllTests" tests="12">
+	<testsuite name="AllTests" tests="16">
 		<testcase classname="AllTests" name="micro::testThatdigitalPinToPortProducesIdenticalResultsThatAreInTheMap"/>
 		<testcase classname="AllTests" name="micro::testThatdigitalPinToBitmaskProducesIdenticalResultsThatAreInTheMap"/>
 		<testcase classname="AllTests" name="micro::testThatdigitalPinToTimerProducesIdenticalResultsThatAreInTheMap"/>
@@ -12,5 +12,9 @@
 		<testcase classname="AllTests" name="mega::testThatComputedPortIsSameAsSwitchImplementation"/>
 		<testcase classname="AllTests" name="mega::testThatComputedPinIsSameAsSwitchImplementation"/>
 		<testcase classname="AllTests" name="standardMega8::testThatdigitalPinToTimerProducesIdenticalResultsThatAreInTheMap"/>
+		<testcase classname="AllTests" name="simpleTestforFrequencyFormulaFor8bit"/>
+		<testcase classname="AllTests" name="simpleTestforFrequencyFormulaFor8bit1"/>
+		<testcase classname="AllTests" name="testFrequencyRangeForTimer2"/>
+		<testcase classname="AllTests" name="testFrequencyRangeForTimer3"/>
 	</testsuite>
 </testsuites>
