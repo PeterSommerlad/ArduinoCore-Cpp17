@@ -346,14 +346,14 @@
 			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/cores/arduino/wiring_pulse.S</locationURI>
 		</link>
 		<link>
-			<name>cores/arduino/wiring_pulse.c</name>
+			<name>cores/arduino/wiring_pulse.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/cores/arduino/wiring_pulse.c</locationURI>
+			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/cores/arduino/wiring_pulse.cpp</locationURI>
 		</link>
 		<link>
-			<name>cores/arduino/wiring_shift.c</name>
+			<name>cores/arduino/wiring_shift.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/cores/arduino/wiring_shift.c</locationURI>
+			<locationURI>PARENT-3-PROJECT_LOC/ArduinoCore-avr/cores/arduino/wiring_shift.cpp</locationURI>
 		</link>
 		<link>
 			<name>libraries/EEPROM/README.md</name>

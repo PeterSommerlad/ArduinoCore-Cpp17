@@ -24,7 +24,7 @@ void sbi(PTR sfr, uint8_t const bit)
 	(_SFR_BYTE(sfr) |= _BV(bit));
 }
 
-template <uint8_t pin, uint8_t val>
+template <PinType pin, PinState val>
 inline
 __attribute__((always_inline))
 void digitalWrite();

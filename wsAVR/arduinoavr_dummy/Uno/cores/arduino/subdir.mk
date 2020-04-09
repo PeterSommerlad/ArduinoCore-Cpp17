@@ -8,9 +8,7 @@ C_SRCS += \
 /Users/sop/Arduino/ArduinoCore-avr/cores/arduino/hooks.c \
 /Users/sop/Arduino/ArduinoCore-avr/cores/arduino/wiring.c \
 /Users/sop/Arduino/ArduinoCore-avr/cores/arduino/wiring_analog.c \
-/Users/sop/Arduino/ArduinoCore-avr/cores/arduino/wiring_digital.c \
-/Users/sop/Arduino/ArduinoCore-avr/cores/arduino/wiring_pulse.c \
-/Users/sop/Arduino/ArduinoCore-avr/cores/arduino/wiring_shift.c 
+/Users/sop/Arduino/ArduinoCore-avr/cores/arduino/wiring_digital.c 
 
 CPP_SRCS += \
 /Users/sop/Arduino/ArduinoCore-avr/cores/arduino/CDC.cpp \
@@ -29,7 +27,9 @@ CPP_SRCS += \
 /Users/sop/Arduino/ArduinoCore-avr/cores/arduino/WString.cpp \
 /Users/sop/Arduino/ArduinoCore-avr/cores/arduino/abi.cpp \
 /Users/sop/Arduino/ArduinoCore-avr/cores/arduino/main.cpp \
-/Users/sop/Arduino/ArduinoCore-avr/cores/arduino/new.cpp 
+/Users/sop/Arduino/ArduinoCore-avr/cores/arduino/new.cpp \
+/Users/sop/Arduino/ArduinoCore-avr/cores/arduino/wiring_pulse.cpp \
+/Users/sop/Arduino/ArduinoCore-avr/cores/arduino/wiring_shift.cpp 
 
 S_UPPER_SRCS += \
 /Users/sop/Arduino/ArduinoCore-avr/cores/arduino/wiring_pulse.S 
@@ -65,9 +65,7 @@ C_DEPS += \
 ./cores/arduino/hooks.d \
 ./cores/arduino/wiring.d \
 ./cores/arduino/wiring_analog.d \
-./cores/arduino/wiring_digital.d \
-./cores/arduino/wiring_pulse.d \
-./cores/arduino/wiring_shift.d 
+./cores/arduino/wiring_digital.d 
 
 CPP_DEPS += \
 ./cores/arduino/CDC.d \
@@ -86,7 +84,9 @@ CPP_DEPS += \
 ./cores/arduino/WString.d \
 ./cores/arduino/abi.d \
 ./cores/arduino/main.d \
-./cores/arduino/new.d 
+./cores/arduino/new.d \
+./cores/arduino/wiring_pulse.d \
+./cores/arduino/wiring_shift.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -251,17 +251,17 @@ cores/arduino/wiring_pulse.o: /Users/sop/Arduino/ArduinoCore-avr/cores/arduino/w
 	@echo 'Finished building: $<'
 	@echo ' '
 
-cores/arduino/wiring_pulse.o: /Users/sop/Arduino/ArduinoCore-avr/cores/arduino/wiring_pulse.c
+cores/arduino/wiring_pulse.o: /Users/sop/Arduino/ArduinoCore-avr/cores/arduino/wiring_pulse.cpp
 	@echo 'Building file: $<'
-	@echo 'Invoking: Cross GCC Compiler'
-	avr-g++ -std=c++17 -x c++ -DF_CPU=16000000L -DARDUINO=10812 -DFLASHEND=32256 -DRAMEND=2048 -DARDUINO_arch=avr -DARDUINO_unop -DARDUINO_ARCH_avr -DUsePetersCpp17 -I/Users/sop/Arduino/ArduinoCore-avr/variants/standard -I/Users/sop/Arduino/ArduinoCore-avr/cores/arduino -Os -g3 -Wall -c -fmessage-length=0 -mmcu=atmega328p -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -flto -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Invoking: Cross G++ Compiler'
+	avr-g++ -std=c++17 -DARDUINO=10812 -DF_CPU=16000000L -DFLASHEND=32256 -DRAMEND=2048 -DARDUINO_arch=avr -DARDUINO_unop -DARDUINO_ARCH_avr -DUsePetersCpp17 -I/Users/sop/Arduino/ArduinoCore-avr/variants/standard -I/Users/sop/Arduino/ArduinoCore-avr/cores/arduino -I/Users/sop/Arduino/ArduinoCore-avr/libraries/SoftwareSerial/src -Os -g3 -Wall -c -fmessage-length=0 -mmcu=atmega328p -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -flto -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-cores/arduino/wiring_shift.o: /Users/sop/Arduino/ArduinoCore-avr/cores/arduino/wiring_shift.c
+cores/arduino/wiring_shift.o: /Users/sop/Arduino/ArduinoCore-avr/cores/arduino/wiring_shift.cpp
 	@echo 'Building file: $<'
-	@echo 'Invoking: Cross GCC Compiler'
-	avr-g++ -std=c++17 -x c++ -DF_CPU=16000000L -DARDUINO=10812 -DFLASHEND=32256 -DRAMEND=2048 -DARDUINO_arch=avr -DARDUINO_unop -DARDUINO_ARCH_avr -DUsePetersCpp17 -I/Users/sop/Arduino/ArduinoCore-avr/variants/standard -I/Users/sop/Arduino/ArduinoCore-avr/cores/arduino -Os -g3 -Wall -c -fmessage-length=0 -mmcu=atmega328p -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -flto -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Invoking: Cross G++ Compiler'
+	avr-g++ -std=c++17 -DARDUINO=10812 -DF_CPU=16000000L -DFLASHEND=32256 -DRAMEND=2048 -DARDUINO_arch=avr -DARDUINO_unop -DARDUINO_ARCH_avr -DUsePetersCpp17 -I/Users/sop/Arduino/ArduinoCore-avr/variants/standard -I/Users/sop/Arduino/ArduinoCore-avr/cores/arduino -I/Users/sop/Arduino/ArduinoCore-avr/libraries/SoftwareSerial/src -Os -g3 -Wall -c -fmessage-length=0 -mmcu=atmega328p -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -flto -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
