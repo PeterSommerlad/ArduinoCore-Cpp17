@@ -16,13 +16,19 @@
                             "name": "Peters Micro"
                         },
                         {
+                            "name": "Peters Uno"
+                        },
+                        {
+                            "name": "Peters Mega ADK"
+                        },
+                        {
                             "name": "Arduino Y\u00fan"
                         },
                         {
                             "name": "Arduino Uno"
                         },
                         {
-                            "name": "Arduino Uno WiFi"
+                            "name": "Arduino Uno Wifi"
                         },
                         {
                             "name": "Arduino Diecimila"
@@ -34,7 +40,7 @@
                             "name": "Arduino Mega"
                         },
                         {
-                            "name": "Arduino MegaADK"
+                            "name": "Arduino Mega ADK"
                         },
                         {
                             "name": "Arduino Leonardo"
@@ -50,9 +56,6 @@
                         },
                         {
                             "name": "Arduino Mini"
-                        },
-                        {
-                            "name": "Arduino Ethernet"
                         },
                         {
                             "name": "Arduino Fio"
@@ -73,18 +76,6 @@
                             "name": "Arduino ATMegaNG"
                         },
                         {
-                            "name": "Arduino Robot Control"
-                        },
-                        {
-                            "name": "Arduino Robot Motor"
-                        },
-                        {
-                            "name": "Arduino Gemma"
-                        },
-                        {
-                            "name": "Adafruit Circuit Playground"
-                        },
-                        {
                             "name": "Arduino Y\u00fan Mini"
                         },
                         {
@@ -95,12 +86,12 @@
                         }
                     ],
                     "category": "Contributed",
-                    "checksum": "SHA-256:caa55501230e12af1f2851518c089e1a30232a53650a37956a56cc3e5bef740d",
+                    "checksum": "SHA-256:47cdc5aea8a378aa62b90d307a77f924b50891b127113ff27843816b8e51d244",
                     "help": {
                         "online": "http://www.arduino.cc/en/Reference/HomePage"
                     },
                     "name": "Cpp17 Arduino AVR Boards",
-                    "size": "22497515",
+                    "size": "22563368",
                     "toolsDependencies": [
                         {
                             "name": "avr-gcc",
