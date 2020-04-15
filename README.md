@@ -17,15 +17,21 @@ The source code for the AVR cores is at https://github.com/PeterSommerlad/Arduin
 * Own ARM Core package clone `package_Cpp17ARM_index.json`
 * Own AVR Core package clone `package_Cpp17AVR_index.json`
 * all .c files for all cores compiled as C++ 
-* `pins_arduino.h` and Arduino.h for Uno and Micro (AVR) C++-ified. (Boards microp and unop have the compiler settings) Flash-program-space savings 7-20% from simple test cases
-* `pins_arduino.h` MegaADK (AVR) C++-ified. (Board MegaADKp has the compiler settings), reported the pins_arduino.h to leonardo for all boards, but can not test that due to lack of hardware. microp uses the micro variant again.
+* `pins_arduino.h` for all supported variants C++-ified
+   * removed PROGMEM tables for better compile-time computation support
+   * inlined most of wiring in `wiring_inline.h` to enable better inlining
+   * provide overloads of wiring API that take template arguments instead of run-time function arguments for optimal codegen
+* simplified tone.cpp to remove unused code and flexibility derived from original source, minimize its RAM requirement
 * RAII class for inhibiting interrupts SafeStatusRegisterAndClearInterrupt in Arduino.h and used in wiring code.
 * some improved type safety through enum class for PortType and PinType.
-* remove non-converted obsolete variants and boards (unless being already converted): 
+* removed non-converted obsolete variants and boards (unless being already converted): 
   * Adafruit Circuiplay (circuitplay32u4 - is almost 1-1 leonardo clone)
   * Arduino Ethernet (ethernet - retired product)
   * Arduino Gemma (gemma - retired product)
   * Arduino Robot (robot\_control, robot\_motor - retired product)
+* USBApi.h defines u8 u16 and u32 -> refactor to use inttypes.h official names, also used in CDC.cpp
+* cleaning up (partially) of Arduino.h to provide clean official interface
+* better type safety through enums for all GPIO pins, Ports and timers
 
 ### Caveats
 
@@ -43,5 +49,8 @@ The source code for the AVR cores is at https://github.com/PeterSommerlad/Arduin
 
 ### Notes and Todos
 
-* USBApi.h defines u8 u16 and u32 -> refactor to use inttypes.h official names, also used in CDC.cpp
 * eliminate more macros and redundancy
+* provide platform for download and for non-macos (Windows, Linux)
+* check if gcc8.3 really provides better codegen as supposed
+* may be help with keeping AVR backend non-deprecated for gcc10...
+* adjust ARM core accordingly to 
